@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebook } from 'react-icons/fa';
-import Form from './Form';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
@@ -35,7 +35,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <Form />
+        <ContactForm />
       </div>
     </section>
   );
