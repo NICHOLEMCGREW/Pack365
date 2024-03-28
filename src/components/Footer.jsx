@@ -47,7 +47,7 @@ const Footer = () => {
       <hr className="md:block border border-gray-400 my-4 mt-10 w-full" />
 
       {/* Copyright Section */}
-      <div className="copyright text-white mt-2">
+      <div className="copyright text-white mt-2 px-4">
         <p>&copy; 2024 Cub Scouts Pack 365. All rights reserved | Site designed and maintained by <a href="https://nicholemcgrew.netlify.app" target="_blank" className="text-blue-500">Nichole McGrew.</a></p>
       </div>
     </footer>
