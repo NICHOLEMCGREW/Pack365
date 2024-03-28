@@ -2,7 +2,7 @@ import { YearlyEventsData } from './index.js';
 
 const Events = () => {
   return (
-    <section id="events" className="events events-content text-center min-h-screen m-20">
+    <section id="events" className="events events-content mx-mobile text-center min-h-screen m-20">
       <div className="title mb-6">
         <h1 className="text-[#003f87] text-5xl font-semibold mb-4 sm:mt-8 md:mt-4">Events</h1>
         <div className="line mb-7 w-16 border-t-4 border-[#ffb225] mx-auto"></div>

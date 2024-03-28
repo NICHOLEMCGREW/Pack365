@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
 
         {/* Join Us Section */}
-        <div className="max-w-md w-full mx-auto p-6 bg-white border rounded-lg shadow-md mb-10 md:ml-8 md:mb-0">
+        <div className="mx-mobile max-w-md w-full mx-auto p-6 bg-white border rounded-lg shadow-md mb-10 md:ml-8 md:mb-0">
           <h1 className="text-[#003f87] text-4xl font-semibold mb-4">Join Us</h1>
           <div className="line mb-7 w-16 border-t-4 border-[#ffb225]"></div>
           <p className="text-gray-700 mb-4">
