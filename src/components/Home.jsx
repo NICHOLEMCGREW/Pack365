@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen mt-8 px-5 sm:px-10 md:px-5 flex items-center justify-center text-[#003f87] bg-gray-50"
+      className="min-h-screen px-5 sm:px-10 md:px-5 flex items-center justify-center text-[#003f87] bg-gray-50"
     >
       <div className="flex flex-col md:flex-row items-center justify-around w-full max-w-screen-lg md:gap-20 md:p-8">
         <div className="text-center mb-8 md:max-w-3xl md:mx-auto">

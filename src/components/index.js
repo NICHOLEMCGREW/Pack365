@@ -5,7 +5,7 @@ import hike from '../assets/imgs/hike.jpg';
 import splashPad from '../assets/imgs/splashPad.jpg';
 import crossoverRockets from '../assets/imgs/crossoverRockets.jpg';
 import bearsCarnival from '../assets/imgs/bearsCarnival.jpg';
-import food from '../assets/imgs/food.jpg';
+// import food from '../assets/imgs/food.jpg';
 import derby from '../assets/imgs/derby.jpg';
 import blueGold from '../assets/imgs/blueGold.jpg';
 import stem from '../assets/imgs/stem.jpg';
@@ -52,13 +52,13 @@ export const YearlyEventsData = [
     image: camp,
     infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', 
   },
-  {
-    date: 'November',
-    title: 'Scouting for Food',
-    description: 'Annual service project collecting and donating food.',
-    image: food,
-    infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', 
-  },
+  // {
+  //   date: 'November',
+  //   title: 'Scouting for Food',
+  //   description: 'Annual service project collecting and donating food.',
+  //   image: food,
+  //   infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', 
+  // },
   {
     date: 'Ongoing',
     title: 'STEM Activities',

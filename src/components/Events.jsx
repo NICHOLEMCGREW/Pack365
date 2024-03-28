@@ -8,7 +8,7 @@ const Events = () => {
         <div className="line mb-7 w-16 border-t-4 border-[#ffb225] mx-auto"></div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {YearlyEventsData.map((event, index) => (
           <EventCard event={event} key={index} />
         ))}
@@ -18,14 +18,14 @@ const Events = () => {
 };
 
 const EventCard = ({ event }) => (
-  <div className="event w-full max-w-md shadow-md rounded-md bg-gray-100 mx-auto mb-6">
-    <div className="flex flex-col justify-between h-full">
+  <div className="event w-full max-w-[350px] mx-auto mb-6">
+    <div className="rounded-lg shadow-lg overflow-hidden">
       <img
         src={event.image}
         alt={event.title}
-        className="w-full h-[250px] object-cover object-center rounded-t-md mb-2"
+        className="w-full h-[200px] object-cover object-center"
       />
-      <div className="p-1">
+      <div className="p-4">
         <h4 className="text-lg font-bold mb-1">{event.title}</h4>
         <p className="mb-2 text-sm text-gray-600">{event.description}</p>
       </div>
