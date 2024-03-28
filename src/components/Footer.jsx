@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaFacebook, FaEnvelope } from 'react-icons/fa';
 import bsaImage from '../assets/imgs/bsa.png';
 import { Link as ScrollLink } from 'react-scroll';

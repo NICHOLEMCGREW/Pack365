@@ -1,11 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Form = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      // Submit form data
+      console.log('Form data:', formData);
+      // Clear form fields
+      setFormData({ name: '', email: '', message: '' });
+    }
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'Name is required';
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+      isValid = false;
+    } else if (!isValidEmail(formData.email)) {
+      newErrors.email = 'Invalid email format';
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'Message is required';
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const isValidEmail = (email) => {
+    // Basic email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   return (
     <div className="max-w-md w-full mx-auto p-4 bg-white border rounded-lg shadow-md mb-10">
       <h1 className="text-[#003f87] text-4xl font-semibold mb-2">Message Us</h1>
       <div className="line mb-7 w-16 border-t-4 border-[#ffb225]"></div>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <div className="mb-2">
           <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="name">
             Name
@@ -13,24 +67,16 @@ const Form = () => {
           <input
             id="name"
             name="name"
+            value={formData.name}
+            onChange={handleChange}
             placeholder="Your Name"
-            className="w-full px-2 py-1 border rounded-lg bg-gray-100 focus:outline-none focus:border-[#ffb225]"
+            className={`w-full px-2 py-1 border rounded-lg bg-gray-100 focus:outline-none ${
+              errors.name ? 'border-red-500' : 'focus:border-[#ffb225]'
+            }`}
             required
             type="text"
           />
-        </div>
-        <div className="mb-2">
-          <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="childName">
-            Child's Name
-          </label>
-          <input
-            id="childName"
-            name="childName"
-            placeholder="Your Child's Name"
-            className="w-full px-2 py-1 border rounded-lg bg-gray-100 focus:outline-none focus:border-[#ffb225]"
-            required
-            type="text"
-          />
+          {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
         </div>
         <div className="mb-2">
           <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="email">
@@ -39,11 +85,16 @@ const Form = () => {
           <input
             id="email"
             name="email"
+            value={formData.email}
+            onChange={handleChange}
             placeholder="email@email.com"
-            className="w-full px-2 py-1 border rounded-lg bg-gray-100 focus:outline-none focus:border-[#ffb225]"
+            className={`w-full px-2 py-1 border rounded-lg bg-gray-100 focus:outline-none ${
+              errors.email ? 'border-red-500' : 'focus:border-[#ffb225]'
+            }`}
             required
             type="email"
           />
+          {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
         </div>
         <div className="mb-2">
           <label className="block text-gray-700 text-sm font-semibold mb-1" htmlFor="message">
@@ -52,12 +103,17 @@ const Form = () => {
           <textarea
             id="message"
             name="message"
+            value={formData.message}
+            onChange={handleChange}
             rows="3"
             placeholder="Type your message here..."
-            className="w-full px-2 py-1 border rounded-lg bg-gray-100 focus:outline-none focus:border-[#ffb225]"
+            className={`w-full px-2 py-1 border rounded-lg bg-gray-100 focus:outline-none ${
+              errors.message ? 'border-red-500' : 'focus:border-[#ffb225]'
+            }`}
             required
             type="text"
           />
+          {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
         </div>
         <div className="flex justify-center">
           <button
@@ -70,6 +126,6 @@ const Form = () => {
       </form>
     </div>
   );
-}
+};
 
 export default Form;
