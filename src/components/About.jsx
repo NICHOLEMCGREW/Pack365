@@ -18,16 +18,16 @@ const About = () => {
         </ScrollLink>
       </div>
       <div className="image-grid mt-8 lg:mr-10 lg:ml-10 lg:mt-0 grid gap-5 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-        <div className="w-full lg:w-[400px] rounded-lg shadow-lg">
+        <div className="w-full max-w-md rounded-lg shadow-lg">
           <img src={zoo} alt="Zoo" className="w-full h-auto" />
         </div>
-        <div className="w-full lg:w-[400px] rounded-lg shadow-lg">
+        <div className="w-full max-w-md rounded-lg shadow-lg">
           <img src={hike} alt="hike" className="w-full h-auto" />
         </div>
-        <div className="w-full lg:w-[400px] rounded-lg shadow-lg">
+        <div className="w-full max-w-md rounded-lg shadow-lg">
           <img src={popcorn} alt="Popcorn" className="w-full h-auto" />
         </div>
-        <div className="w-full lg:w-[400px] rounded-lg shadow-lg">
+        <div className="w-full max-w-md rounded-lg shadow-lg">
           <img src={parade} alt="Parade" className="w-full h-auto" />
         </div>
       </div>
