@@ -8,7 +8,7 @@ const Home = () => {
       className="min-h-screen px-5 sm:px-10 md:px-5 flex items-center justify-center text-[#003f87] bg-gray-50"
     >
       <div className="flex flex-col md:flex-row items-center justify-around w-full max-w-screen-lg md:gap-20 md:p-8">
-        <div className="text-center mb-8 md:max-w-3xl md:mx-auto">
+        <div className="text-center mb-8 md:max-w-3xl md:mx-auto mt-16 md:mt-0">
           <h1 className="text-[#003f87] text-5xl font-semibold mb-10 sm:mt-8 md:mt-4 hover:text-[#ffb225]">
             Welcome to Cub Scouts Pack 365
           </h1>
