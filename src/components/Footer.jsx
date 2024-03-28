@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Footer = () => {
   return (
-    <footer className="mx-mobile min-h-100px py-10 flex flex-col items-center justify-center border-t-2 border-[#ffb225] bg-[#003f87] text-center md:text-left">
+    <footer className="min-h-100px py-10 flex flex-col items-center justify-center border-t-2 border-[#ffb225] bg-[#003f87] text-center md:text-left">
       <ul className="flex items-center mb-4 mt-2 space-x-4">
         {/* Social Icons */}
         <li>

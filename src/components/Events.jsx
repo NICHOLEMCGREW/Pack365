@@ -2,13 +2,13 @@ import { YearlyEventsData } from './index.js';
 
 const Events = () => {
   return (
-    <section id="events" className="events events-content mx-mobile text-center min-h-screen m-20">
+    <section id="events" className="events events-content mt-10 mx-auto text-center min-h-screen lg:ml-10 lg:mr-10">
       <div className="title mb-6">
         <h1 className="text-[#003f87] text-5xl font-semibold mb-4 sm:mt-8 md:mt-4">Events</h1>
         <div className="line mb-7 w-16 border-t-4 border-[#ffb225] mx-auto"></div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {YearlyEventsData.map((event, index) => (
           <EventCard event={event} key={index} />
         ))}
@@ -18,7 +18,7 @@ const Events = () => {
 };
 
 const EventCard = ({ event }) => (
-  <div className="event shadow-md rounded-md bg-gray-100">
+  <div className="event w-full max-w-[450px] shadow-md rounded-md bg-gray-100 mx-auto mb-6">
     <div className="flex flex-col justify-between h-full">
       <img
         src={event.image}
