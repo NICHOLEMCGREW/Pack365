@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="contact-container flex flex-col md:flex-row items-center justify-center w-full max-w-screen-xl mx-auto">
         {/* Contact Information Section */}
         <div className="max-w-md w-full mx-auto p-6 bg-white border rounded-lg shadow-md mb-10 md:mr-8 md:mb-0">
-          <h1 className="text-[#003f87] text-4xl font-semibold mb-4">Contact Us</h1>
+          <h1 className="text-[#003f87] text-4xl font-semibold mb-4 sm:m-2">Contact Us</h1>
           <div className="line mb-7 w-16 border-t-4 border-[#ffb225] mx-auto"></div>
           <div className="flex flex-col space-y-4">
             <div className="flex items-center">
@@ -26,7 +26,7 @@ const Contact = () => {
 
         {/* Join Us Section */}
         <div className="mx-auto mt-10 max-w-md w-full p-6 bg-white border rounded-lg shadow-md mb-10 md:ml-8 md:mb-0">
-          <h1 className="text-[#003f87] text-4xl font-semibold mb-4">Join Us</h1>
+          <h1 className="text-[#003f87] text-4xl font-semibold mb-4 sm:m-2">Join Us</h1>
           <div className="line mb-7 w-16 border-t-4 border-[#ffb225] mx-auto"></div>
           <p className="text-gray-700 mb-4">
             <FaClock className="inline-block mr-2 text-[#003f87]" />

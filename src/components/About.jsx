@@ -7,7 +7,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const About = () => {
   return (
     <section id="about" className="about flex items-center justify-center mt-4">
-      <div className="about-container flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+      <div className="about-container flex flex-col lg:flex-row items-center justify-center lg:justify-between max-w-screen-xl mx-auto md:mt-4 sm:mt-8 lg:mt-0">
         <div className="about-content pr-8 text-center max-w-screen-xl mx-auto md:mt-4 sm:mt-8 lg:mt-0">
           <h1 className="text-[#003f87] text-5xl font-semibold mb-4 sm:mt-8 md:mt-4">About Us</h1>
           <div className="line mb-7 w-16 border-t-4 border-[#ffb225] mx-auto"></div>
@@ -19,10 +19,10 @@ const About = () => {
           </ScrollLink>
         </div>
         <div className="image-grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 grid gap-5 lg:mr-10 ml-10 mt-8">
-          <img src={zoo} alt="Zoo" className="w-1/2 lg:w-[400px] rounded-lg shadow-lg" />
-          <img src={hike} alt="hike" className="w-1/2 lg:w-[400px] rounded-lg shadow-lg" />
-          <img src={popcorn} alt="Popcorn" className="w-1/2 lg:w-[400px] rounded-lg shadow-lg" />
-          <img src={parade} alt="Parade" className="w-1/2 lg:w-[400px] rounded-lg shadow-lg" />
+          <img src={zoo} alt="Zoo" className="w-full lg:w-[400px] rounded-lg shadow-lg" />
+          <img src={hike} alt="hike" className="w-full lg:w-[400px] rounded-lg shadow-lg" />
+          <img src={popcorn} alt="Popcorn" className="w-full lg:w-[400px] rounded-lg shadow-lg" />
+          <img src={parade} alt="Parade" className="w-full lg:w-[400px] rounded-lg shadow-lg" />
         </div>
       </div>
     </section>
