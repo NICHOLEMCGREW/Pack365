@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const About = () => {
   return (
-    <section id="about" className="about mx-mobile flex items-center justify-center mt-4">
+    <section id="about" className="about flex items-center justify-center mt-4">
       <div className="about-container flex flex-col lg:flex-row items-center justify-center lg:justify-between">
         <div className="about-content pr-8 text-center max-w-screen-xl mx-auto md:mt-4 sm:mt-8 lg:mt-0">
           <h1 className="text-[#003f87] text-5xl font-semibold mb-4 sm:mt-8 md:mt-4">About Us</h1>
