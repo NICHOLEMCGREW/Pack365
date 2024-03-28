@@ -41,7 +41,7 @@ export const YearlyEventsData = [
   {
     date: 'May',
     title: 'Raingutter Regatta',
-    description: 'Boat racing event with small handmade boats.',
+    description: 'Annual boat racing event with small handmade boats.',
     image: rain,
     infoUrl: 'https://www.scoutshop.org/blog/5-simple-tips-to-help-cub-scouts-get-ready-for-the-raingutter-regatta-.html',
   },
@@ -69,14 +69,14 @@ export const YearlyEventsData = [
   {
     date: 'Ongoing',
     title: 'Service Projects',
-    description: 'Participation in community service projects.',
+    description: 'Group participation in a variety of community service projects.',
     image: service,
     infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', 
   },
   {
     date: 'Ongoing',
     title: 'Volunteer Projects',
-    description: 'Participation in volunteer projects.',
+    description: 'Troop participation in various local volunteer projects.',
     image: foodbank,
     // infoUrl: 'https://www.scoutshop.org/blog/blue-gold-banquet-planning-guide.html', 
   },

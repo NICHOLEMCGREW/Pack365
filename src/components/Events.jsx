@@ -18,14 +18,14 @@ const Events = () => {
 };
 
 const EventCard = ({ event }) => (
-  <div className="event w-full max-w-[350px] mx-auto mb-6">
+  <div className="event w-full max-w-[350px] mx-auto mb-6 flex flex-col justify-between">
     <div className="rounded-lg shadow-lg overflow-hidden">
       <img
         src={event.image}
         alt={event.title}
         className="w-full h-[200px] object-cover object-center"
       />
-      <div className="p-4">
+      <div className="p-4 flex-grow">
         <h4 className="text-lg font-bold mb-1">{event.title}</h4>
         <p className="mb-2 text-sm text-gray-600">{event.description}</p>
       </div>
