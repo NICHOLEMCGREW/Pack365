@@ -21,9 +21,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact flex flex-col md:flex-row items-center justify-center mt-8 mb-4"
+      className="contact flex flex-col md:flex-row items-center justify-center mt-8 mb-1 relative z-10"
     >
-      <div className="contact-container flex flex-col md:flex-row items-center justify-center w-full max-w-screen-xl mx-auto space-y-6 md:space-y-0 md:space-x-15">
+      <div className="contact-container flex flex-col md:flex-row items-center justify-center w-full max-w-screen-xl mx-auto space-y-6 md:space-y-0 md:space-x-6">
         {/* Join Us Section */}
         <div className="max-w-[340px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md">
           <h1 className="text-[#003f87] text-4xl font-semibold mb-4">
@@ -55,7 +55,7 @@ const Contact = () => {
         </div>
 
         {/* Animation Section */}
-        <div className="max-w-[350px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md">
+        <div className="max-w-[350px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md relative z-0">
           <AnimationLottie ref={animationRef} />
         </div>
 
