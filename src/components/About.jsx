@@ -1,5 +1,3 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import zoo from '../assets/imgs/zoo.jpg';
 import hike from '../assets/imgs/hike.jpg';
 import popcorn from '../assets/imgs/popcorn.jpg';

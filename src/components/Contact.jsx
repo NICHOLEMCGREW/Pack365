@@ -1,26 +1,41 @@
-import React from 'react';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebook } from 'react-icons/fa';
-import ContactForm from './ContactForm';
+import { FaMapMarkerAlt, FaClock, FaEnvelope, FaPhoneAlt, FaFacebook } from 'react-icons/fa';
+
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact flex items-center justify-center mb-1">
+    <section id="contact" className="contact flex items-center justify-center mb-10">
       <div className="contact-container flex flex-col md:flex-row items-center justify-around w-full max-w-screen-xl mx-auto">
+        {/* Contact Information Section */}
+        <div className="max-w-md w-full mx-auto p-6 bg-white border rounded-lg shadow-md mb-10 md:mr-8 md:mb-0">
+          <h1 className="text-[#003f87] text-4xl font-semibold mb-4">Contact Us</h1>
+          <div className="line mb-7 w-16 border-t-4 border-[#ffb225]"></div>
+          <div className="flex flex-col space-y-4">
+            <div className="flex items-center">
+              <FaEnvelope className="mr-3 text-[#003f87]" />
+              <a href="mailto:pack365yukon@gmail.com" className="text-[#003f87] hover:underline">pack365yukon@gmail.com</a>
+            </div>
+            <div className="flex items-center">
+              <FaPhoneAlt className="mr-3 text-[#003f87]" />
+              <a href="tel:+14054762916" className="text-[#003f87] hover:underline">405-476-2916</a>
+            </div>
+            <div className="flex items-center">
+              <FaFacebook className="mr-3 text-[#003f87]" />
+              <a href="https://www.facebook.com/cubscoutpack365yukon?mibextid=dGKdO6" target="_blank" rel="noopener noreferrer" className="text-[#003f87] hover:underline">Cub Scout Pack 365 Yukon</a>
+            </div>
+          </div>
+        </div>
+
         {/* Join Us Section */}
-        <div className="pr-8 max-w-md md:mb-0 w-full mx-auto p-6 bg-white border rounded-lg shadow-md mb-10">
+        <div className="max-w-md w-full mx-auto p-6 bg-white border rounded-lg shadow-md mb-10 md:ml-8 md:mb-0">
           <h1 className="text-[#003f87] text-4xl font-semibold mb-4">Join Us</h1>
           <div className="line mb-7 w-16 border-t-4 border-[#ffb225]"></div>
-          <p className="font-semibold text-gray-600 mb-4 text-center">
-            We invite you to join us at a meeting to try it out.
-          </p>
-          <p className="text-gray-700 mb-2">
+          <p className="text-gray-700 mb-4">
             <FaClock className="inline-block mr-2 text-[#003f87]" />
-            Tuesday's at 7:00 PM
+            <span className="font-semibold">Meeting Time:</span> Tuesdays at 7:00 PM
           </p>
-          <p className="text-gray-700 mb-2">
+          <p className="text-gray-700 mb-4">
             <FaMapMarkerAlt className="inline-block mr-2 text-[#003f87]" />
-            Grace Episcopal Church, 600 N Mustang Rd, Yukon, OK, 73099
-            {' '}
+            <span className="font-semibold">Location:</span> Grace Episcopal Church, 600 N Mustang Rd, Yukon, OK, 73099{' '}
             <a
               href="https://maps.google.com/?q=Grace+Episcopal+Church,600+N+Mustang+Rd,Yukon,OK,73099"
               target="_blank"
@@ -30,12 +45,10 @@ const Contact = () => {
               (Google Maps)
             </a>
           </p>
-          <p className="text-center font-semibold mt-4 text-gray-600">
-            Experience the fun and adventure of Cub Scouting. Contact us for more details!
+          <p className="text-gray-700 mb-8">
+            <span className="font-semibold">Description:</span> Experience the fun and adventure of Cub Scouting. Contact us for more details!
           </p>
         </div>
-
-        <ContactForm />
       </div>
     </section>
   );

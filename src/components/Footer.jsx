@@ -9,7 +9,9 @@ const Footer = () => {
         {/* Social Icons */}
         <li>
           <a href="https://www.facebook.com/cubscoutpack365yukon?mibextid=dGKdO6" target="_blank" rel="noopener noreferrer" className="text-white text-3xl transition duration-500 hover:transform hover:-translate-y-2">
-            <FaFacebook />
+            <span className="hover:text-[#ffb225]">
+              <FaFacebook />
+            </span>
           </a>
         </li>
         <li>
@@ -19,7 +21,9 @@ const Footer = () => {
         </li>
         <li>
           <a href="mailto:pack365yukon@gmail.com" className="text-white text-3xl transition duration-500 hover:transform hover:-translate-y-2">
-            <FaEnvelope />
+            <span className="hover:text-[#ffb225]">
+              <FaEnvelope />
+            </span>
           </a>
         </li>
       </ul>
