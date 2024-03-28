@@ -21,11 +21,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact flex flex-col md:flex-row items-center justify-center mt-8 mb-1"
+      className="contact flex flex-col md:flex-row items-center justify-center mt-8 mb-4"
     >
-      <div className="contact-container flex flex-col md:flex-row items-center justify-center w-full max-w-screen-xl mx-auto">
+      <div className="contact-container flex flex-col md:flex-row items-center justify-center w-full max-w-screen-xl mx-auto space-y-6 md:space-y-0 md:space-x-15">
         {/* Join Us Section */}
-        <div className="max-w-[340px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md mb-10 md:ml-4">
+        <div className="max-w-[340px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md">
           <h1 className="text-[#003f87] text-4xl font-semibold mb-4">
             Join Us
           </h1>
@@ -55,12 +55,12 @@ const Contact = () => {
         </div>
 
         {/* Animation Section */}
-        <div className="max-w-[350px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md mb-10 md:mr-4">
+        <div className="max-w-[350px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md">
           <AnimationLottie ref={animationRef} />
         </div>
 
         {/* Contact Information Section */}
-        <div className="max-w-[350px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md mb-10 md:mr-4 md:mt-0">
+        <div className="max-w-[350px] w-full mx-auto md:w-1/2 p-6 bg-white border rounded-lg shadow-md">
           <h1 className="text-[#003f87] text-4xl font-semibold mb-4">
             Contact Us
           </h1>
