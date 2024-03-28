@@ -1,5 +1,6 @@
+import React from 'react';
 
-const ContactForm = () => {
+const Form = () => {
   return (
     <div className="max-w-md w-full mx-auto p-4 bg-white border rounded-lg shadow-md mb-10">
       <h1 className="text-[#003f87] text-4xl font-semibold mb-2">Message Us</h1>
@@ -71,4 +72,4 @@ const ContactForm = () => {
   );
 }
 
-export default ContactForm;
+export default Form;
