@@ -29,7 +29,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <div className={`shadow-md w-full fixed top-0 ${mainBlueColor} `}>
+    <div className={`shadow-md w-full fixed top-0 ${mainBlueColor} z-50`}>
       <div className="md:px-10 py-4 px-7 md:flex justify-between items-center text-white">
         <div className="flex text-2xl cursor-pointer items-center gap-2">
           <ScrollLink

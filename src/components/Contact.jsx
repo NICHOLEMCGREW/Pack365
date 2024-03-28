@@ -21,7 +21,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact flex flex-col md:flex-row items-center justify-center mt-8 mb-4 relative z-0"
+      className="contact flex flex-col md:flex-row items-center justify-center mt-8 mb-4 relative z-[-10]"
     >
       <div className="contact-container flex flex-col md:flex-row items-center justify-center w-full max-w-screen-xl mx-auto space-y-6 md:space-y-0 md:space-x-15">
         {/* Join Us Section */}
